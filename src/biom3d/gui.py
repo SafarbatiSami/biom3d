@@ -850,9 +850,9 @@ class TrainTab(ttk.Frame):
             # Remove folder selection img and msk directories
             self.folder_selection.grid_remove()
             self.folder_selection.label1.grid_remove()
-            self.folder_selection.img_outdir.grid_remove()
+            self.folder_selection.img_outpath.grid_remove()
             self.folder_selection.label2.grid_remove()
-            self.folder_selection.msk_outdir.grid_remove()
+            self.folder_selection.msk_outpath.grid_remove()
             self.use_conf_button.grid_remove()
             self.use_tune_button.grid_remove()
 
@@ -867,9 +867,9 @@ class TrainTab(ttk.Frame):
             self.use_conf_button.grid(column=0,row=0,sticky=(N,W,E), pady=3)
             # Folder selection
             self.folder_selection.label1.grid(column=0,row=2, sticky=W, pady=7)
-            self.folder_selection.img_outdir.grid(column=0, row=3, sticky=(W,E))
+            self.folder_selection.img_outpath.grid(column=0, row=3, sticky=(W,E))
             self.folder_selection.label2.grid(column=0,row=4, sticky=W, pady=7)
-            self.folder_selection.msk_outdir.grid(column=0,row=5, sticky=(W,E))           
+            self.folder_selection.msk_outpath.grid(column=0,row=5, sticky=(W,E))           
             self.use_tune_button.grid(column=0,row=1,sticky=(N,W), ipady=5)  
 
     def display_conf_finetuning(self):
